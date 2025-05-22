@@ -1,0 +1,43 @@
+.header-link.active {
+    border-bottom: 1px solid white;
+    transition: .1s ease-out;
+}
+
+.header_menu_bar {
+    z-index: 40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 100%;
+    background-color: #02040a;
+}
+
+.slide-down {
+    animation: slideDown .5s ease forwards;
+}
+
+.slide-up {
+    animation: slideUp .5s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
