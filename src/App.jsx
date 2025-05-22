@@ -10,6 +10,7 @@ import SignIn from './pages/signin/SignIn'
 
 // Layout 
 import Layout from './pages/layout/Layout'
+import NotFound from './components/notFound/NotFound'
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
           <Route path='/recipes' element={<Recipes />} />
           <Route path='/posts' element={<Posts />} />
           <Route path='/users' element={<Users />} />
+          <Route path='*' element={<NotFound/>}/>
         </Route>
         <Route path='/signin' element={<SignIn />} />
-
       </Routes>
     </>
   )
